@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
-  <title>AUDI</title>
+    <title>AUDI</title>
   <link rel="shortcut icon" type="image/png" href="http://www.example.com/favicon.png" />
 </head>
-<body>
-  <table border="4" border-color="black" style="width:100%">
+<body bgcolor="#bababa">
+  <table bgcolor="#797b79" border="4" border-color="black" style="width:80%; hegiht:80%;">
   	<style type="text/css">
 		ul {
 		    list-style: none;
@@ -15,15 +15,46 @@
 		ul li:before {
 		    content:  "—";
 		    position: relative;
-			left: -5px;
+			  left: -5px;
+        color:#693131
 		}
-  	</style>
-    <caption align="center"><strong>AUDI Беларусь</strong></caption>
+    .servis {
+      vertical-align: top;      
+    }
+    table, th, td {
+      border: 2px solid black;
+    }
+    table {
+      width: 100%; /* Ширина таблицы */
+    }
+    td, th{
+      padding: 5px; /* Поля в ячейках */
+      vertical-align: top; /* Выравнивание по верхнему краю ячеек */
+    }
+    .listFirstLevel{
+      list-style-type: upper-roman;
+    }
+    .listSecondLevel{
+      list-style-type: upper-alpha;
+    }
+    .listThirdLevel {
+      counter-reset: secNum;
+      list-style-type: none;
+    }
+    .listThirdLevel li:before{
+      content: counter(secNum) ") ";
+      counter-increment: secNum;
+    }
+    </style>
+    <caption align="center"><h2>AUDI Беларусь</h2></caption>
     <tr>
-      <th rowspan="3" colspan="2"> Новый Audi Q7 <br><img src="audiq7.jpg"></th>
+      <th rowspan="3" colspan="2"> 
+        <p>Новый Audi Q7</p>
+        <img width="600" height="420" src="audiq7.jpg">
+      </th>
       <th colspan="2">Audi Центр Минск</th>
-      <td rowspan="4"> <img src="minsk-audi.jpg"></td>
-      <th> Официальный сервис Audi <br><img src="servis.jpg" height="150" width="270"></th>
+      <td rowspan="4"><br> <img src="minsk-audi.jpg"></td>
+      <th style="align: top;"> Официальный сервис Audi <br><div class="servis"><img src="servis.jpg" height="410" width="720"></div></th>
     </tr>
     <tr>
       <td>Квалифицированное обслуживание по стандартам Audi: качественно и в срок. Настоящий сервис — это искренняя забота и умение предвосхищать ожидания. В сервисе Audi они сочетаются с гарантиями качества, надежности и высокими стандартами обслуживания автомобилей</td>
@@ -31,104 +62,93 @@
       <td rowspan="3"></td>
     </tr>
     <tr>
-      <td>Мы оказываем полный спектр услуг по техническому, гарантийному обслуживанию и ремонту всех автомобилей марки Audi.</td>
+      <td><em><font color="#9b0707">Мы оказываем полный спектр услуг по техническому, гарантийному обслуживанию и ремонту всех автомобилей марки Audi</font>.</em></td>
     </tr>
     <tr>
-      <td> <h3 align="center">Модельный ряд</h3>
-      	<ol type="I">
-      		<li> Модели
-      			<ol type="A">
-      				<li>Audi A3
-      					<ol>
+      <td><h3 align="center">Модельный ряд</h3>
+      	<ol class="listFirstLevel">
+          <li><b>Модели</b>
+      			<ol class="listSecondLevel">
+              <li><b>Audi A3</b>
+      					<ol class="listThirdLevel">
       						<li> A3 Sportback</li>
-      						<li> A3 Sedan</li>
+                  <li> A3 Sedan</li>
       						<li> RS-3 Sportback</li>
       						<li> RS-3 Sedan</li>
       					</ol>
       				</li>
-      				<li>Audi A4
-      					<ol>
+              <li><b>Audi A4</b>
+      					<ol clsas="listThirdLevel">
       						<li> A4 Sedan</li>
       						<li> A4 Avant</li>
       						<li> A4 allroad quatro</li>
       					</ol>
       				</li>
-      				<li>Audi A5
-      					<ol>
+      				<li><b>Audi A5</b>
+      					<ol clsas="listThirdLevel">
       						<li> A5 Sportback</li>
       						<li> A5 Coupe</li>
       						<li> RS-5 Coupe Turbo</li>
       					</ol>
       				</li>
-      				<li>Audi A6
-      					<ol>
+      				<li><b>Audi A6</b>
+      					<ol clsas="listThirdLevel">
       						<li> A6 Classic</li>
       					</ol>
       				</li>
-      				<li>Audi A7</li>
-      					<ol>
+      				<li><b>Audi A7</b></li>
+      					<ol clsas="listThirdLevel"> 
       						<li> A7 Sportback</li>
       					</ol>
-      				<li>Audi A8</li>
-      					<ol>
-      						<li> A8 Classic</li>
-      						<li> A8 Long Edition</li>
-      					</ol>
-      				<li>Audi Q5
-      					<ol>
-      						<li> Q5 Classic</li>
-      						<li> SQ5 </li>
-      					</ol>
-      				</li>
-      				<li>Audi Q7	
-      					<ol>
-      						<li> Q7 Classic</li>
-      					</ol>
-      				</li>
-
       			</ol>
       		</li>
-      		<li> Тип Кузова
-      			<ol type="A">
-      				<li>Sportback</li>
-      					<ol>
+          <li><em><b>Тип Кузова</b></em>
+      			<ol type="As">
+      				  <li>Sportback</li>
+      					 <ol>
       						<li>v 1.6</li>
       						<li>v 2.6</li>
       						<li>v 4.0</li>
       						<li>v 4.2</li>
       					</ol>
-      				<li>Saloon</li>
-      					<ol>
-      						<li>v 4.0</li>
-      						<li>v 4.3</li>
-      					</ol>
-      				<li>Sedan</li>
-      					<ol>
+      				  <li>Saloon</li>
+                  <ol clsas="listThirdLevel">
+                    <li>v 4.0</li>
+                    <li>v 4.3</li>
+                  </ol>
+      				  <li>Sedan</li>
+      					<ol clsas="listThirdLevel">
       						<li>v 2.4</li>
       						<li>v 3.4</li>
       						<li>v 4.0</li>
-      					</ol>
-      				<li>Avant</li>
-      					<ol>
-      						<li>v 2.4</li>
-      						<li>v 3.4</li>
-      					</ol>
-      				<li>Sport</li>
-      					<ol>
-      						<li>v 4.2</li>
-      						<li>v 5.1</li>
-      					</ol>
-      				<li>SUV</li>
-      					<ol>
-      						<li>v 4.2</li>
-      						<li>v 4.4</li>
       					</ol>
       			</ol>      			
       		</li>
       	</ol>
       </td>
-      <td>Текст5</td>
-      <td>Список1</td>
+      <td><h3>Новинки:</h3><h4>Распродажа аксессуаров Audi.</h4>Специальные цены на 80 товаров в наличии. Наш девиз «Превосходство высоких технологий» при разработке и производстве оригинальных аксессуаров Audi играет не менее решающую роль, чем при создании каждого автомобиля марки. Того, кто верен своей индивидуальности, всегда легко узнать. Ведь мода переменчива, и только стиль — вечен…</td>
+      <td>
+        <ol>
+          <li>
+            <h3>Сепциальные предложения</h3>
+            <ol>
+              <li>Защитное прокрытие для кузова вашего Audi</li>
+              <li>Специальное предложение на услугу "развал-схождение"</li>
+              <li>Audi Service Cinema</li>
+              <li>Посадочная полоса для Вашего Audi</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Фирменные аксессуароы Audi</h3>
+            <ol>
+            <li>Брелок A3 - 55,50 руб <strike>65,00 руб</strike></li>
+            <li>Браслет кожаный женский - 90,90 руб <strike> 132,68</strike></li>
+            <li>Бирка для багажа кожаная, красная - 32,53 руб <strike>32,53 руб</strike></li>
+            <li>Auto Union Type B Lucca, Silver, 1:43 - 132,12 руб <strike> 158,54 руб</strike></li>
+        </ol>
+          </li>
+        </ol>
+      </td>
       <td> <h3> Наши приемущества</h3>
       	<ul>
 	      	<li>Открытость</li>
