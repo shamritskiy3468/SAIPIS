@@ -1,0 +1,10 @@
+.background {
+	width:600px;
+	height:600px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image:  url("20183.png"), url("2018-2.png");
+	background-position: bottom-right, center, top-left;
+	background-repeat: no-repeat; 
+	background-size: contain; 
+}

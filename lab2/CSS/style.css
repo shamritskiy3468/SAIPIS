@@ -1,0 +1,84 @@
+table, th, td {
+  border: 6px solid black;
+}
+table {
+  height: 500px;
+}
+.Background1 {
+  background-image: url("../Resources/main-audi-3.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 0.99;
+}
+.Background2 {
+  background-image: url("../Resources/center-cutted.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.TableName {
+  font-family: fantasy;
+  font-style: normal;
+  font-size: 32px;
+}
+.AudiCenterMinsk {
+  padding-bottom: 95%;
+  padding-left: 18px;
+  text-align: left;
+  font-family: fantasy;
+  font-style: normal;
+  font-size: 32px;
+  color: #535353;
+  background-origin: padding-box;
+}
+.AudiName {
+  font-family: fantasy;
+  font-style: normal;
+  font-size: 21px;
+  color: #ff0045;
+}
+.ContentBox {
+  width: 100%;
+  margin-top: -350px;
+  text-align: left;
+  font-family: fantasy;
+  font-style: normal;
+  font-size: 22px;
+  color: #380808;
+  background-origin: padding-box;
+  -moz-column-count: 3;
+  column-gap: 50px;
+  column-rule: 5px solid #ff004e;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.first_img {
+  position: absolute;
+  left: 100px;
+  top: 400px;
+}
+.second_img {
+  position: absolute;
+  left: 220px;
+  top: 430px;
+}
+.third_img {
+  position: absolute;
+  left: 370px;
+  top: 530px;
+}
+.fade:hover {
+  opacity: 0.6;
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#logo:hover {
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  transform: scale(1.6);
+}
+.soc:hover {
+  font-size: 20px;
+  -moz-transform: scale(1.6);
+  transform: scale(1.6);
+}
