@@ -1,4 +1,4 @@
-table, th, td {
+  table, th, td {
   border: 6px solid black;
 }
 table {
@@ -19,12 +19,13 @@ table {
 .TableName {
   font-family: fantasy;
   font-style: normal;
-  font-size: 32px;
+  font-size: 38px;
 }
 .AudiCenterMinsk {
   padding-bottom: 95%;
   padding-left: 18px;
   text-align: left;
+  text-align:justify;
   font-family: fantasy;
   font-style: normal;
   font-size: 32px;
@@ -52,33 +53,90 @@ table {
   text-align: justify;
   word-wrap: break-word;
 }
+#firstParagraph {
+  font-weight: bold;  
+  font-family: monospace;
+  color: #ffffff;
+}
+#secondParagraph {
+  font-size: 25px;
+  font-family: serif;
+  font-style: italic;
+  color: #2e2d2f;
+}
+#thirdParagraph {
+  font-style: oblique;
+  color: #ff0031;
+}
 .first_img {
   position: absolute;
   left: 100px;
-  top: 400px;
+  top: 700px;
+  z-index: 1;
 }
 .second_img {
   position: absolute;
   left: 220px;
-  top: 430px;
+  top: 730px;
+  z-index: 2;
 }
 .third_img {
   position: absolute;
   left: 370px;
-  top: 530px;
+  top: 830px;
+  z-index: 3;
+}
+#onImage {
+  width: 150px;
+  position: absolute;
+  z-index: 4;
+  left: 610px;
+  color: #ffffff;
+  top: 900px;
+  font-size: 25px;
+}
+#onImage:hover {
+  color: #015501;
 }
 .fade:hover {
   opacity: 0.6;
   -moz-transform: scale(1.2);
   transform: scale(1.2);
 }
-#logo:hover {
-  -webkit-transform: scale(1.6);
-  -moz-transform: scale(1.6);
+#logoName:hover {
   transform: scale(1.6);
 }
 .soc:hover {
   font-size: 20px;
   -moz-transform: scale(1.6);
   transform: scale(1.6);
+}
+#animated {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+/* Standard syntax */
+@keyframes rotation {
+    0% {
+      opacity: 1;
+      top: 100px;
+      left: 5%;
+      transform:rotate(0deg);
+    }
+    50% {
+      opacity: 0.3;
+      top:100px;
+      left: 90%;
+      transform:rotate(1440deg);
+    }
+    100% {
+      opacity: 1;
+      top:100px;
+      left: 5%;
+      transform:rotate(720deg);
+    }
 }
