@@ -1,0 +1,139 @@
+body {
+  background-image: url(../Resources/wall_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    height: 100vh;
+    width: 100%;
+  margin: 0;
+
+}
+#header{
+  height: 100%;
+  margin-left: 20px;
+  position: relative;
+}
+#container { 
+  opacity: 0.8;
+  background: #2e2e2e;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  height: 450px;
+  width: 98%;
+  border-top-right-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  font-family: sans-serif;
+}
+.smallThing {
+  font-family: fantasy;
+  color: black;
+  margin-top: 1;
+  opacity: 0.8;
+  margin-top: 0%;
+  background:#2e2e2e;
+  position: absolute;
+  top: 3%;
+  width: 17%;
+  height: 70px;
+  border-top-right-radius: 20px 20px;
+  border-top-left-radius: 20px 20px;
+  align-content: center;
+}
+.logo {
+  position: absolute;
+  left: 24%;
+  top: -10%;
+}
+.logo:hover {
+  transform: scale(1.25);
+}
+#text {
+  padding: 40px;
+  color: #c3c3c3;
+  position: relative;
+/*  column-count: 3;*/
+}
+#header2 {
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  top: 8%;
+  z-index: 4;
+  left: 26%;
+}
+#menu {
+  position: absolute;
+  top: 40%;
+  left: -13%;
+  padding-left: 0px; 
+  margin: 0px; 
+  width: 90%; 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+  text-align: left; 
+} 
+#menu li { 
+  margin:0px; 
+  font-family: 'Kodchasan', sans-serif; 
+  font-size: 30px; 
+  text-align: left; 
+} 
+#menu a { 
+  display: block; 
+  padding: 10px 10px; 
+  color: #afafaf; 
+  text-decoration: none; 
+  font-size: 20px;
+} 
+#menu li { 
+  list-style-type: none; 
+  width: 15%; 
+  display: inline-block; 
+} 
+#menu li:not(:first-child) { 
+  content: " | " 
+} 
+#menu a:hover { 
+  font-size: 25px;
+  color: #de003c;
+}
+.footer {
+  width: 97%;
+  opacity: 0.6;
+  background: #2e2e2e;
+  position: absolute;
+  top: 93%;
+  height: 20%;
+  border-top-right-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  border-top-left-radius: 20px 20px;
+  background-image: url(../Resources/panoram-2.jpeg);
+  background-size: cover;
+  border: 10px solid #2e2e2e;
+  box-shadow: 5px 5px 5px #101010;
+  margin-bottom: 4%;
+}
+p:first-letter {
+  font-family: 'Kodchasan', sans-serif; 
+  font-size: 25px;
+  color: #c40a35;
+}
+.car {
+  position: absolute;
+  bottom: 10%; 
+}
+.car:hover {
+  transform: scale(1.1);
+}
+#fig {
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+}
+#logo_mini {
+  position: absolute;
+  left: 10%;
+}

@@ -1,40 +1,141 @@
 body {
   background-image: url(../Resources/wall_2.jpg);
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-attachment: fixed;
+  margin: 0;
+  background-size: cover;
 }
 #container {
-  background:#2e2e2e;
+  opacity: 0.7;
+  background: #2e2e2e;
   position: relative;
   margin-bottom: auto;
   width: 98%;
-  height: 110vh;
+  height: 170vh;
   padding: 10px;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+
+table {
+  overflow: hidden;
+  z-index: 1;
+}
+
+td, th, .ff-fix {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+td:hover::after,
+.ff-fix:hover::after { 
+  background-color: rgba(203, 0, 23, 0.79);
+  content: '\00a0';  
+  height: 10000px;    
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;        
+}
+table, th, td {
+  border: 4px solid rgb(95, 95, 95);
+}
+td:hover {
+  background-color: rgba(84, 94, 172, 0.53);
+}
+th:hover {
+  background-color: rgba(190, 5, 5, 0.71);
+}
+th {
+  height: 30px;
+  text-align: center;
+}  
+td {
+  text-align: center;
+}
+#table_row {
+  background-color: #747474;
+}
+table {
+  width: 600px;
+  height: 70px;
+  
+}
+.table_class {
+  position: absolute;
+  top: 130%;
 }
 .content {
+  opacity: 0.8;
   background-color: #888888;
   width: 100%;
-  height: 85%;
+  height: 90.6%;
   position: relative;
   text-align: center;
-  top: -20%;
+  top: -10.1%;
+  text-align: justify;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+#fixed_field {
+  border-radius: 20px;
+  top: 61%;
+  position: fixed;
+  width: 180px;
+  height: 200px;
+  left: 2%;
+  background: linear-gradient(red, blue);
+}
+.button {
+  position: absolute;
+  top: 65%;
+  left: 19%;
+  background-color: #525252; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #101010;
+}
+.button:hover {
+  transform: scale(1.15);
+}
+#input {
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  left: 12.5%;
+}
+#label {
+  top: 11%;
+  position: absolute;
+  left: 12%;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  text-shadow: 10px 10px 5px #101010;
 }
 .trapezze {
+  opacity: 0.8;
   background-color: #888888;
   width: 90%;
-  height: 17.8%;
+  height: 8%;
   position: relative;
   left: 10%;
-  top: -16.7%;
+  top: -10.1%;
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
 }
 .main_text {
   margin: 0 auto;
-  margin-left: 22%;
+  margin-left: 15%;
   float: left;
-  width: 50%;
+  width: 70%;
   padding: 30px;
   color: white;
   position: relative;
@@ -44,33 +145,82 @@ body {
   padding-left: 20px;
   top: 20px;
   padding-bottom: 22px;
-  font-family: "Bookman Old Style";
+  font-family: 'Work Sans', sans-serif;
   color: azure;   
+}
+.car {
+  position: relative;
+  left: -16%;
+}
+.audi:hover {
+  transform:scale(1.2);
 }
 .romb {
   position: relative;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(0, 255, 255, 0.66);
+  width: 170px;
+  height: 170px;
+  background-color: rgba(232, 0, 36, 0.97);
+  background-color: #2e2e2e;
+  color: bisque;
+  padding: 40px;
   transform: rotate(45deg);
+  top: 60%;
+  left: -40px
 }
-#1_romb {
-  left: 25%;
+.romb:hover {
+  opacity: 0.85;
+  transform: scale(1.2);
+  z-index: 5;
+}
+.text_padding {
+  padding: 20px;
+  text-align: justify;
+}
+.rombs_block {
+  opacity: 1;  
+  position: relative;
+  width: 500px;
+  height: 275px;
+  top: 23%;
+  left: 26%;
+}
+.romb_1 {
+  box-shadow: 10px 10px 5px #101010;
+  z-index: 1;
   position: absolute;
-  top: 20%;
+  margin-top: -23%; 
+  margin-left: 13%;
 }
-#2_romb {
-  
+.romb_2 {
+  box-shadow: 10px 10px 5px #101010;
+  z-index: 2;
+  position: absolute;
+  margin-top: -23%; 
+  margin-left: 43%;
 }
-#3_romb {
-
+.romb_3 {
+  box-shadow: 10px 10px 5px #101010;
+  z-index: 3;
+  position: absolute;
+  margin-left: 73%;
+  margin-top: -23%;  
 }
-
-/*
-.rombiki {
-  width: 160px;
-  height: 160px;
-  background: #274345;
-  transform: rotate(45deg);
+#blink1 {
+  position: absolute;
+  z-index: 10;
+  -webkit-animation: blink1 3s linear infinite;
+  animation: blink1 3s linear infinite;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 100px;
+  left:25%;
 }
-*/
+@-webkit-keyframes blink1 {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgb(255, 0, 0); }
+}
+@keyframes blink1 {
+  0% { color: rgb(100, 0, 108); }
+  50% { color: #ffa5ce; }
+  100% { color: rgb(100, 0, 108); }
+}

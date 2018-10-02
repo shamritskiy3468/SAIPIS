@@ -6,6 +6,7 @@
   <title>AUDI</title>
   <link rel="shortcut icon" type="image/png" href="http://www.example.com/favicon.png" />
   <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kodchasan|Work+Sans" rel="stylesheet">
 </head>
 <body>
   <div id="container">
@@ -13,13 +14,88 @@
     <div class="trapezze">
     </div>
     <div class="content">
+    <div id="fixed_field">
+      <form> 
+        <h2 id="label">
+           Find your Audi
+        </h2>
+        <input name="input" id="input"> 
+      </form>
+      <a class="button" href="../HTML/index2.html">
+        Visit
+      </a>
+    </div>
       <div class="main_text">
         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       </div>
-      <div class="romb" id="1_romb"></div>
-      <div class="romb"></div>
-      <div class="romb"></div>
+      <div class="rombs_block">
+       <h1 id="blink1">A U D I</h1>
+        <div class="romb romb_1 text_padding">
+          English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+          <img class="car" width="230px" height="100px" src="../Resources/2018-%202.png" alt="audi"> 
+        </div>
+        <div class="romb romb_2 text_padding">
+          English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model 
+          <img class="car" width="230px" height="100px" src="../Resources/2018.png" alt="audi"> 
+        </div>
+        <div class="romb romb_3 text_padding">
+          English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model 
+          <img class="car" width="230px" height="100px" src="../Resources/2019.png" alt="audi"> 
+        </div>
+          <table aligh="center" class="table_class">
+          <tr id="table_row">
+            <th>Model</th>
+            <th>Wheels Size</th>
+            <th>Volume</th>
+            <th>Salon</th>
+            <th>CruiseControl</th>
+          </tr>
+          <tr>
+            <th>Audi A5</th>
+            <td>18 (inch)</td>
+            <td>3.2</td>
+            <td>Leather (white)</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th>Audi A7</th>
+            <td>19 (inch)</td>
+            <td>4.2</td>
+            <td>Leather (white)</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th>Audi A8</th>
+            <td>19 (inch)</td>
+            <td>4.0</td>
+            <td>Leather (milk)</td>
+            <td>Yes</td>
+          <tr>
+            <th>Audi Q7</th>
+            <td>20 (inch)</td>
+            <td>4.4</td>
+            <td>Leather (black)</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
+  <script>
+  function firefoxFix() {
+    if ( /firefox/.test( window.navigator.userAgent.toLowerCase() ) ) {
+        var tds = document.getElementsByTagName( 'td' );
+        for( var index = 0; index < tds.length; index++ ) {
+            tds[index].innerHTML = '<div class="ff-fix">' + tds[index].innerHTML + '</div>';                     
+        };
+        var style = '<style>'
+            + 'td { padding: 0 !important; }' 
+            + 'td:hover::before, td:hover::after { background-color: transparent !important; }'
+            + '</style>';
+        document.head.insertAdjacentHTML( 'beforeEnd', style );
+    };
+};
+
+firefoxFix();</script>
 </body>
 </html>
