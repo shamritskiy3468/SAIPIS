@@ -173,10 +173,10 @@ a.effect-underline:hover:after {
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   width: 95  %;
-  height: 70%;
+  height: 90%;
   background-color: rgba(84, 29, 186, 0.76);
 }
-input[type=text] {
+input[type=text], checkbox {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -217,4 +217,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #1e004d;
+}
+.textarea {
+  resize: both;
 }
