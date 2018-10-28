@@ -1,0 +1,104 @@
+.conteiner {
+    display: flex;
+
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    /*flex-basis: 100%;*/
+
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.conteiner > * {
+    /*padding: 0.3%;*/
+    /*flex-grow: 1;*/
+    /*flex-basis: 100%;*/
+    font-family: "Ya/none Kaffeesatz", sans-serif;
+
+}
+
+.myHeader {
+    background: #00796B;
+    min-height: 15vh;
+    color: white;
+    font-family: Georgia;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*border: #2b25ff 4px;*/
+    /*border: 2px double red;*/
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content > * {
+    /*flex-basis: 100%;*/
+    min-height: 60vh;
+    /*padding: 1%;*/
+
+}
+
+.myArticle {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    flex-grow: 60;
+    background-image: url("../resources/фон.jpg");
+    align-items: center;
+    justify-content: center;
+    /*border: 2px double #21ff13;*/
+}
+
+.myNav {
+    display: flex;
+    flex-direction: column;
+    background: #d3fffd;
+    flex-grow: 7;
+    align-items: center;
+    justify-content: center;
+}
+
+A {
+    /*color: #05a82b;*/
+    color: #b20005;
+    margin-bottom: 5vh;
+    /*font-family: ;*/
+}
+
+.myAside {
+    display: flex;
+    max-width: 15vw;
+    background: #0fff20;
+    flex-grow: 15;
+    background-image: url("../resources/aside.jpg");
+    flex-direction: column-reverse;
+    /*border: 2px double #fe06ff;*/
+
+}
+
+.myP {
+    color: #b20005;
+}
+.myFoter {
+    background: #BDBDBD;
+    min-height: 20vh;
+    background-origin: revert;
+    /*background-image: url("pano.jpg");*/
+    /*border: 2px double #ff1622;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFoter > * {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+

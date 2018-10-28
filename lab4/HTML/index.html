@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="../Resources/MorningFresh_Logo-1.png" type="image/gif" sizes="16x16">
   <title>Morning Fresh</title>
+  <script src="../JavaScript/scripts.js"></script>
   <link rel="shortcut icon" type="image/png" href="http://www.example.com/favicon.png" />
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Kodchasan|Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Kodchasan|Work+Sans" rel="stylesheet">-->
   <link rel="stylesheet" href="../CSS/grid.css">
+
 </head>
 <body>
   <div class="wrapper">
@@ -16,78 +18,82 @@
         <nav class="nav">
           <h2><a href="#" class="effect-underline nav-item">Menu</a></h2>
           <h2><a href="#" class="effect-underline nav-item">About</a></h2>
-          <h2><a href="#" class="effect-underline nav-item">Contact</a></h2>
+          <h2><a href="../HTML/index2.html" class="effect-underline nav-item">Table</a></h2>
           <h2><a href="#" class="effect-underline nav-item">Info</a></h2>
-          <h2><a href="#" class="effect-underline nav-item">Servie</a></h2>
+          <h2><a href="#" class="effect-underline nav-item">Service</a></h2>
         </nav>
       </header>
       <div class="box">
         <div class="sidesPart" id="box-case1">
           <h1>Title1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas, reiciendis deserunt ipsum aliquam mollitia minus repellendus laborum, sapiente id, voluptatibus earum numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, amet. Odit amet facere voluptate reiciendis doloribus repellat enim, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore sint maxime nobis, assumenda numquam libero porro cupiditate sequi dolores doloribus ullam, </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas, reiciendis deserunt ipsum aliquam mollitia minus repellendus laborum, sapiente id, voluptatibus earum numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, amet. Odit amet facere voluptate reiciendis doloribus repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos accusamus quis aut, labore sequi. Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur.  </p>
+          <h3><a href="index.html" onclick="resetTable()" title="1">Clear Table</a></h3>
         </div>
         <div id="box-case2">
          <div class="form">
-           <form action="/action_page.php">
+          
+           <form id=myform>
            <h2 align="center">Consumer survey</h2>
-            <label for="fname">Your Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-<!--
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
--->
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              <option value="belarus">Bealrus</option>
-              <option value="kazahstan">Kzahstan</option>
-              <option value="ukrain">Ukrain</option>
-              <option value="austria">Austria</option>
-              <option value="sweeden">Sweeden</option>
-              <option value="poland">Poland</option>
+           
+            <label for="personName">Your Name</label>
+            <input type="text" id="personName" name="personName" required minlength="2" maxlength="20" placeholder="2 to 20 characters long" placeholder="Enter your name..">
+            
+            <label for="personName">Country</label>
+            <select required name="menu" title="select" id="selectCountry" >
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option selected="selected" value="Belarus">Belarus</option>
+              <option value="Usa">USA</option>
+              <option value="Belarus">Bealrus</option>
+              <option value="Kazahstan">Kazahstan</option>
+              <option value="Ukrain">Ukraine</option>
+              <option value="Austria">Austria</option>
+              <option value="Sweeden">Sweeden</option>
+              <option value="Poland">Poland</option>
             </select>
             
-            <label for="">When you can go to us</label>
-            <input type="datetime-local" id="whentime">
+            <label for="whentime">When you can go to us</label>
+            <input required type="datetime-local" id="whentime" name="whentime">
             
-            <label for="">Buying out products?</label>
-            <input type="checkbox">
+            <label for="personName">Have our sales card</label>
+            <input name="checkbox_alone" id="checkbox_alone" type="checkbox">
             <br><br>
-            <label for="">How many time you spend in "Morning Fresh"</label>
+            
+            <label for="personName">How many time you spend in "Morning Fresh"</label>
             <br><br>
             <div class="radioButtons">
-              <label for="">15-30min</label>
+              <label>15-30min</label>
               <input name="radiochoice" type="radio" id="choice1">
-              <label for="">30-45min</label>
+              <label>30-45min</label>
               <input name="radiochoice" type="radio" id="choice2">
-              <label for="">1-1.5h</label>
-              <input name="radiochoice" type="radio" id="choice3">
-              <label for="">2h and more</label>
+              <label>1-1.5h</label>
+              <input name="radiochoice" type="radio" id="choice3" checked>
+              <label>2h and more</label>
               <input name="radiochoice" type="radio" id="choice4">
             </div>
-              <br>
-              <label for="">Leave your wishes to "Morning Fresh"</label><br>
-              <textarea name="" id="" cols="30" rows="5"></textarea>
-<!--
-            <textarea class="textarea" rows="4" cols="100">
-            At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
-            </textarea>
--->
-            <input type="submit" value="Submit">
+             
+            <br>
+            <label for="personName">Leave your wishes to "Morning Fresh"<br></label><br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+            <br><br>
+            <div class="subbtn">
+              <input class="buttonfwd" type="submit" id="submit" name="submit" value="Submit">
+              <input class="reset" id="reset" type="reset" value="Clear Form">
+            </div>
+            <br>
           </form>
           </div>
         </div>
         <div class="sidesPart" id="box-case3">
           <h1>Title3</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas, reiciendis deserunt ipsum aliquam mollitia minus repellendus laborum, sapiente id, voluptatibus earum numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, fuga, omnis. Distinctio veniam voluptatibus placeat voluptatem quis minus animi voluptate aspernatur. </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas, reiciendis deserunt ipsum aliquam mollitia minus repellendus laborum, sapiente id, voluptatibus earum numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, fuga, omnis. Distinctio veniam voluptatibus placeat voluptatem quis minus animi voluptate aspernatur.
+          </p>
         </div>
       </div>
       <div class="footer">
         <ul class="footerUl">
-          <li>Our E-mail : shamritskiydmitriy3468@gmail.com </li>
-          <li>Out Phoone : (375)-29 235-12-22 </li>
+          <li>Our E-mail : <font color="#ff9300">shamritskiydmitriy3468@gmail.com</font></li>
+          <li>Out Phoone : <font color="#ff9300">(375)-29 235-12-22</font></li>
         </ul>
       <div id="social">
         <a href=""><img src="../Resources/insta.png" alt="insta" width="30px" height="30px"></a>

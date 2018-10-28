@@ -1,0 +1,188 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.conteiner > * {
+    font-family: "Ya/none Kaffeesatz", sans-serif;
+
+}
+
+.myHeader {
+    background: #00796B;
+    min-height: 15vh;
+    color: white;
+    font-family: Georgia;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment{
+    margin: 0.8vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content > * {
+      min-height: 60vh;
+}
+
+.myArticle {
+    background: #8BC34A;
+    flex-grow: 60;
+    background-image: url("../resources/фон.jpg");
+
+    /*border: 2px double #21ff13;*/
+}
+
+.myNav {
+    display: flex;
+    flex-direction: column;
+    background: #d3fffd;
+    flex-grow: 7;
+    align-items: center;
+    justify-content: center;
+}
+
+A {
+    color: #b20005;
+    margin-bottom: 5vh;
+
+}
+
+.myAside {
+    display: flex;
+    max-width: 15vw;
+    background: #0fff20;
+    flex-grow: 15;
+    background-image: url("../resources/aside.jpg");
+    flex-direction: column-reverse;
+  }
+
+.myP {
+    color: #b20005;
+}
+
+.myFoter {
+    background: #BDBDBD;
+    min-height: 20vh;
+    background-origin: revert;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFoter > * {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    /*margin: 3%;*/
+    color: #055415;
+}
+
+.inputNameAndStyle {
+    /*display: flex;*/
+    margin: 2%;
+}
+
+.inputCompositionAnd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+}
+
+.inputComent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+}
+
+input {
+    margin: 2%;
+
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    font-size: 3.5vh;
+}
+
+INPUT {
+    font-size: 3.5vh;
+}
+
+.reset {
+    height: 8vh;
+    width: 8vw;
+}
+
+.submit {
+    height: 8vh;
+    width: 8vw;
+}
+
+SELECT {
+    font-size: 3.5vh;
+}
+
+.checkbox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.checkbox,
+.radio {
+    display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ac720e;
+    border-radius: 3px;
+    position: relative;
+    margin: 0.7vh;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before,
+.radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #413548;
+    border-radius: 2px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+    border-radius: 50%;
+}
+

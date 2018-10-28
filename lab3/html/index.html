@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="Stylesheet" href="../css/css.css">
+    <script src="../js/js.js"></script>
+</head>
+<body>
+<div class="conteiner">
+
+    <header class="myHeader">
+        Пинскдрев
+    </header>
+
+    <div class="content">
+
+        <article class="myArticle">
+            <form class="myForm" id="myform">
+
+                <h1>Выбор предпочтений</h1>
+
+                <div class="inputNameAndStyle">
+
+                    <label for="uname">Имя: </label>
+                    <input type="text" id="uname" name="uname" required
+                           minlength="2" maxlength="10"
+                           placeholder="2 to 10 characters long"/>
+                    <span class="validity"></span>
+
+                    <label for="uname">Выбор материала мебели: </label>
+                    <select required name="menu" size="2" multiple="multiple" title="select" id="selectComposition">
+                        <option value="Дуб">Дуб</option>
+                        <option selected="selected" value="Орех">Орех</option>
+                        <option value="Вишня">Вишня</option>
+                        <option value="Клён">Клён</option>
+                    </select>
+
+                </div>
+
+                <div class="inputCompositionAnd">
+
+                    <div>
+                        <label for="uname">Тип доставки: </label>
+
+                        <label>
+                            <input id="id1" class="radio" type="radio" name="radio-test">
+                            <span class="radio-custom"></span>
+                            <span class="label">Курьер</span>
+                        </label>
+                        <label>
+                            <input id="id2" class="radio" type="radio" name="radio-test" checked>
+                            <span class="radio-custom"></span>
+                            <span class="label">Самовывоз</span>
+                        </label>
+
+                    </div>
+                    <div>
+                        <label for="start">Доставка до</label>
+                        <input type="date" id="start" name="trip"
+                               value="2018-10-13"
+                               min="2018-10-13" max="2019-12-31"/>
+                    </div>
+                </div>
+
+                <div class="inputComent">
+
+                    <label for="uname">Мебель: </label>
+                    <div class="checkbox1">
+                        <label>
+                            <input id="checkbox1" class="checkbox" type="checkbox"  name="checkbox-test">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Кресла</span>
+                        </label>
+                        <label>
+                            <input  id="checkbox2" class="checkbox" type="checkbox"  name="checkbox-test">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Диваны</span>
+                        </label>
+                        <label>
+                            <input id="checkbox3" class="checkbox" type="checkbox" name="checkbox-test">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Банкетки</span>
+                        </label>
+                        <label>
+                            <input id="checkbox4" class="checkbox" type="checkbox" name="checkbox-test">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Столы</span>
+                        </label>
+
+
+                    </div>
+
+                    <label class="comment">Примечание </label>
+                    <label>
+                        <textarea name="comment" id="comment" cols="30" rows="8" title="asd"> </textarea>
+                    </label>
+                    <input class="reset" type="reset" id="reset" value="Reset">
+                    <input class="submit" type="submit" id="submit" value="Submit">
+                </div>
+
+            </form>
+        </article>
+
+        <nav class="myNav">
+            <a href="index2.html" title="1" target="_blank">Просмотр данных</a>
+            <a href="index.html" onclick="resetaTable()" title="1">Сбросить результат</a>
+        </nav>
+
+        <aside class="myAside">
+
+            <p class="myP">
+                Благодаря политике экологичности и активной борьбе за здоровье нации генеральный директор ЗАО
+                «Пинскдрев» Лоран Степанович АРИНИЧ получил в 2007 году звание «Человек года» в области охраны
+                окружающей среды в
+                Брестской области.
+            </p>
+            <h2 class="myP">КСТАТИ</h2>
+        </aside>
+
+    </div>
+
+    <footer class="myFoter">
+        <!--<img border-width = "25px" src="../resources/aside.jpg" >-->
+        <ul>
+            <li>Интернет магазин</li>
+            <li>+375 (44) 750-74-60</li>
+            <li>+375 (44) 751-06-61</li>
+            <li>+375 (17) 210-30-35</li>
+            <li>Пн - Пт: 8.00 – 19.00<br>
+                Сб - Вс: выходной
+            </li>
+        </ul>
+        <ul>
+            <li>Горячая линия</li>
+            <li>+375 (165) 31-77-77</li>
+            <li>+375 (29) 605-57-57</li>
+            <li>+375 (29) 805-57-57</li>
+            <li>e-mail: question@pinskdrev.by <br>
+                Пн - Пт: 8.00 – 19.00<br>
+                Сб - Вс: выходной
+            </li>
+        </ul>
+    </footer>
+
+</div>
+</body>
+</html>

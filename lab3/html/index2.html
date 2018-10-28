@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="Stylesheet" href="../css/css2.css">
+    <script src="../js/js.js"></script>
+</head>
+<body>
+<div class="conteiner">
+
+    <header class="myHeader">
+        Пинскдрев
+    </header>
+
+    <div class="content">
+
+
+        <article class="myArticle">
+
+
+            <table border="1" bgcolor=#f0f8ff>
+
+                <script language="javascript" type="text/javascript">
+
+
+                    document.write("<tr><td >Нумерация</td>");
+                    document.write("<td>Имя</td>");
+                    document.write("<td>Материал мебели</td>");
+                    document.write("<td>Мебель</td>");
+                    document.write("<td>Тип доставки</td>");
+                    document.write("<td>Дата доставки</td>");
+                    document.write("<td >Примечание</td></tr>");
+
+                    for (var i = 0, len = localStorage.length; i < len; ++i) {
+
+                        personInfo = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+                        document.write("<tr><td style='width: 100px;'>" + (i + 1) + "</td>");
+                        document.write("<td style='width: 100px; text-align: right;'>" + personInfo.name + "</td>");
+                        document.write("<td style='width: 100px; text-align: right;'>" + personInfo.compositionFurtiture + "</td>");
+                        document.write("<td style='width: 100px; text-align: right;'>" + personInfo.furtiture + "</td>");
+                        document.write("<td style='width: 100px; text-align: right;'>" + personInfo.typeDeliveryRadio + "</td>");
+                        document.write("<td style='width: 100px; text-align: right;'>" + personInfo.dateDelivery + "</td>");
+                        document.write("<td style='width: 100px; text-align: right;'>" + personInfo.coment + "</td></tr>");
+                    }
+
+
+                </script>
+            </table>
+            <script language="javascript" type="text/javascript">
+
+
+                document.write("<ol>")
+                for (var i = 0, len = localStorage.length; i < len; ++i) {
+                    personInfo = JSON.parse(localStorage.getItem(localStorage.key(i)));
+                    document.write("<li>" + personInfo.name + "</li>");
+                }
+                document.write("<ol>")
+            </script>
+        </article>
+
+        <nav class="myNav">
+            <a href="index.html" title="2">Домой</a>
+
+            <a href="" onclick="closePage()" title="3">Закрыть окно</a>
+
+
+        </nav>
+
+        <aside class="myAside">
+
+            <p class="myP">
+                Благодаря политике экологичности и активной борьбе за здоровье нации генеральный директор ЗАО
+                «Пинскдрев» Лоран Степанович АРИНИЧ получил в 2007 году звание «Человек года» в области охраны
+                окружающей среды в
+                Брестской области.
+            </p>
+            <h2 class="myP">КСТАТИ</h2>
+        </aside>
+
+    </div>
+
+    <footer class="myFoter">
+        <!--<img src="200px-Pinskdrev.png" >-->
+        <ul>
+            <li>Интернет магазин</li>
+            <li>+375 (44) 750-74-60</li>
+            <li>+375 (44) 751-06-61</li>
+            <li>+375 (17) 210-30-35</li>
+            <li>Пн - Пт: 8.00 – 19.00<br>
+                Сб - Вс: выходной
+            </li>
+        </ul>
+        <ul>
+            <li>Горячая линия</li>
+            <li>+375 (165) 31-77-77</li>
+            <li>+375 (29) 605-57-57</li>
+            <li>+375 (29) 805-57-57</li>
+            <li>e-mail: question@pinskdrev.by <br>
+                Пн - Пт: 8.00 – 19.00<br>
+                Сб - Вс: выходной
+            </li>
+        </ul>
+    </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../Resources/MorningFresh_Logo-1.png" type="image/gif" sizes="16x16">
+  <title>Morning Fresh</title>
+  <link rel="shortcut icon" type="image/png" href="http://www.example.com/favicon.png"/>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kodchasan|Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/grid.css">
+  <script src="../JavaScript/scripts.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header id="header">
+    <a href="#" class="logo"><img src="../Resources/MorningFresh_Logo-1.png" alt="" width="120px"
+                                  height="70px"></a>
+    <nav class="nav">
+      <h2><a href="#" class="effect-underline nav-item">Menu</a></h2>
+      <h2><a href="../HTML/index.html" class="effect-underline nav-item">Home</a></h2>
+      <h2><a href="#" class="effect-underline nav-item">Contact</a></h2>
+      <h2><a href="#" class="effect-underline nav-item">Info</a></h2>
+      <h2><a href="#" class="effect-underline nav-item">Service</a></h2>
+    </nav>
+  </header>
+  <div class="box">
+    <div class="sidesPart" id="box-case1">
+      <h1>Title1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas, reiciendis deserunt
+        ipsum aliquam mollitia minus repellendus laborum, sapiente id, voluptatibus earum numquam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Officiis vel, amet. Odit amet facere voluptate reiciendis
+        doloribus repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos
+        accusamus quis aut, labore sequi.
+        <enim class=""></enim>
+      </p>
+    </div>
+    <div id="box-case2">
+      <table class="table_it" border="3" bgcolor=#f0f8ff>
+
+        <script language="javascript" type="text/javascript">
+          document.write("<tr><td>Number</td>");
+          document.write("<td>Name</td>");
+          document.write("<td>Country</td>");
+          document.write("<td>When You can Go to us?</td>");
+          document.write("<td>Have Our Card?</td>");
+          document.write("<td>Time Spend in Shop </td>");
+          document.write("<td>Comments</td></tr>");
+          for (var i = 0, len = localStorage.length; i < len; ++i) {
+            personInfo = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+            console.log(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.dateToGo + "</td>");
+
+            document.write("<tr><td style='width: 100px;'>" + (i + 1) + "</td>");
+            document.write(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.name + "</td>");
+            document.write(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.country + "</td>");
+            document.write(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.dateToGo + "</td>");
+            document.write(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.haveSalesCard
+                + "</td>");
+            document.write(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.timeInShop + "</td>");
+            document.write(
+                "<td style='width: 100px; text-align: right;'>" + personInfo.wishes + "</td></tr>");
+          }
+
+
+        </script>
+      </table>
+    </div>
+    <div class="sidesPart" id="box-case3">
+      <h1>Title3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas, reiciendis deserunt
+        ipsum aliquam mollitia minus repellendus laborum, sapiente id, voluptatibus earum numquam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Ut, fuga, omnis. Distinctio veniam voluptatibus placeat
+        voluptatem quis minus animi voluptate aspernatur. </p>
+      <br>
+    </div>
+  </div>
+  <div class="footer">
+    <ul class="footerUl">
+      <li>Our E-mail : shamritskiydmitriy3468@gmail.com</li>
+      <li>Out Phoone : (375)-29 235-12-22</li>
+    </ul>
+    <div id="social">
+      <a href=""><img src="../Resources/insta.png" alt="insta" width="30px" height="30px"></a>
+      <a href="https://vk.com/<id91206722></id91206722>"><img src="../Resources/Vk-icon.png" alt="vk" width="30px" height="30px"></a>
+      <a href=""><img src="../Resources/tele.png" alt="tele" width="30px" height="30px"></a>
+      <a href=""><img src="../Resources/viber.png" alt="viber" width="30px" height="30px"></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
